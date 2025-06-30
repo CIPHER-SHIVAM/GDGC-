@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Auth System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="authBox">
+    <h2 id="formTitle">Login</h2>
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="handleAuth()">Login</button>
+    <div class="toggle">
+      <p id="toggleText">Don't have an account? <a onclick="toggleForm()">Sign Up</a></p>
+      <p><a onclick="forgotPassword()">Forgot Password?</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
